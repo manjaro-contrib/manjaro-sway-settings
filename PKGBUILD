@@ -2,7 +2,7 @@
 
 pkgname=manjaro-sway-settings
 pkgver=17.2.3
-pkgrel=11
+pkgrel=12
 arch=('any')
 _pkgbase=desktop-settings
 url="https://github.com/Manjaro-Sway/$_pkgbase"
@@ -43,7 +43,11 @@ depends=(
     'dex'               # executes desktop entries on autostart
     'swaybg'            # wallpaper setter
     'rofimoji'          # emoji picker
+    ## portal
+    'xdg-desktop-portal-lxqt' # native lxqt file chooser, via the portal
+    'lxqt-qtplugin'           # styles the portal dialog process (qt6-only, that process only)
     ## theme
+    'qt6ct'                   # provides qt6ct-style, used to style the portal dialog
     'kvantum'                 # theme engine for qt
     'kvantum-qt5'             # theme engine for qt (qt 5 support)
     'ttf-jetbrains-mono-nerd' # default monospace font
